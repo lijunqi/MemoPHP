@@ -21,3 +21,13 @@
     print_r($my_list1);
     echo "<br>";
     print_r($my_list2);
+
+    // Merge
+    $list1 = ['a', 'b', 'c'];
+    $list2 = ['a', 'd', 'e'];
+    $merged_list = array_merge($list1, $list2);
+    echo "Merged list: ";
+    print_r($merged_list);
+    $unique_merged = array_unique($merged_list, SORT_REGULAR);
+    echo "Unique merged list: ";
+    print_r($merged_list);
