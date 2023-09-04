@@ -7,6 +7,18 @@
  * Traits are simply a method for re-using code.
  * Interfaces should not be thought of as a mutually exclusive alternative to traits.
  * In fact, creating traits that fulfill the capabilities required by an interface is the ideal use case.
+ * 
+ * trait 必须实现方法体 ， interface 不能实现方法体。
+ * trait 可以预定义类成员，但是成员不能被调用者覆盖，必须有相同的初始化参数。
+ * interface 不允许预定义成员。
+ * 一个类可以实现多个 interface ，也可以使用多个 trait 。从另一个角度来讲，trait 是为了来解决不能多继承的。
+ * 
+ * interface是class的一个约束条件，指定某个class必须实现哪些方法，但不需要定义这些方法的具体内容。
+ * trait出现的比interface要晚，官方定义是：自 PHP5.4.0 起，PHP 实现了一种代码复用的方法，称为 trait。
+ * Trait 是为类似 PHP 的单继承语言而准备的一种代码复用机制。
+ * Trait 为了减少单继承语言的限制，使开发人员能够自由地在不同层次结构内独立的类中复用 method。
+ * Trait 和 Class 组合的语义定义了一种减少复杂性的方式，避免传统多继承和 Mixin 类相关典型问题。
+
  */
 
 // An inherited method from a base class is overridden by the method inserted into A1 from the SayWorld Trait. 

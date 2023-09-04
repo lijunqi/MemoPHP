@@ -7,7 +7,7 @@
 function test()
 {
     static $a = 0;
-    echo $a."\n";
+    echo "static a = $a\n";
     $a++;
 }
 
