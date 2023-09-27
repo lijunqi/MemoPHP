@@ -1,20 +1,14 @@
 <?php
-$a = 1;
-if (!$a) {
-    echo "Yes\n";
-}
-else {
-    echo "No\n";
-}
 
-<<<<<<< HEAD
-$a = 0;
+$a = 1;
 echo $a > 0 && print_r("yes");
+echo "\n";
 
 /*
  * null coalescing operator:
  * It returns its first operand if it EXISTS and NOT NULL; otherwise it returns its second operand.
  */
+echo "========= Null coalescing operator =========\n";
 // * Those two are equivalent:
 $foo1 = $bar ?? 'something';
 echo "foo1: ".$foo1."\n";
@@ -38,21 +32,10 @@ echo "foo5: ".$foo5."\n";
 $a = null;
 if (isset($a))
 {
-    echo 'is set';
+    echo "is set\n";
 }
 else {
-    echo 'not set';
+    echo "not set\n";
 }
-
-=======
-$content = "asdf";
-$content .= "|".$a;
-echo $content."\n";
-
-list($first, $second, $third) = explode("_", "A_B_C_D", 3);
-echo "1st is - ".$first."\n";
-echo "2nd is - ".$second."\n";
-echo "3rd is - ".$third."\n";
->>>>>>> bff229ca091669e6b90081df6871eb8149eefa54
 
 ?>
