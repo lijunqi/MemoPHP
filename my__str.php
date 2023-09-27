@@ -1,6 +1,6 @@
 <?php
 
-// Trim
+// * Trim
 $str = ',asdf,';
 echo $str[-1]."\n";
 $a = rtrim($str, ',');
@@ -24,3 +24,8 @@ echo 'e = '.$e.'--- len = '.strlen($e)."\n";
 $f = trim(" ,qq,we are good ,  , ", ", ");
 echo 'f = '.$f.'--- len = '.strlen($f)."\n";
 //
+
+// * Replace
+$str = "Hello world";
+$new = str_replace("world", "Jacky", $str);
+echo "New str: $new\n";

@@ -16,3 +16,8 @@ $c = ",";
 $c_array = explode(",", $c);
 print_r($c_array);
 echo "c_array len = ".count($c_array)."\n";
+
+$d = "asdf";
+$d_array = explode(":", $d);
+print_r($d_array);
+echo "d_array len = ".count($d_array)."\n";
