@@ -7,7 +7,6 @@ else {
     echo "No\n";
 }
 
-<<<<<<< HEAD
 $a = 0;
 echo $a > 0 && print_r("yes");
 
@@ -44,7 +43,6 @@ else {
     echo 'not set';
 }
 
-=======
 $content = "asdf";
 $content .= "|".$a;
 echo $content."\n";
@@ -53,6 +51,5 @@ list($first, $second, $third) = explode("_", "A_B_C_D", 3);
 echo "1st is - ".$first."\n";
 echo "2nd is - ".$second."\n";
 echo "3rd is - ".$third."\n";
->>>>>>> bff229ca091669e6b90081df6871eb8149eefa54
 
 ?>
