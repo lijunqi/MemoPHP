@@ -21,3 +21,8 @@ $d = "asdf";
 $d_array = explode(":", $d);
 print_r($d_array);
 echo "d_array len = ".count($d_array)."\n";
+
+$e = 'powershell -a "a 1" -b "23"';
+$e_array = explode(" -", $e);
+print_r($e_array);
+echo "e_array len = ".count($e_array)."\n";

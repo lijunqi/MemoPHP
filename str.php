@@ -28,26 +28,49 @@ $g = trim("   asdf    "); // default trim space
 echo 'g = '.$g.'--- len = '.strlen($g)."\n";
 //
 
-<<<<<<< HEAD:my__str.php
-// * Replace
-$str = "Hello world";
-$new = str_replace("world", "Jacky", $str);
-echo "New str: $new\n";
-=======
-// Empty
+// * Empty
 echo "This is empty: ";
 var_dump(empty(""))."\n";
 echo "A is empty: ";
 var_dump(empty("A"))."\n";
 
-// str_contains
+// * str_contains
 if (str_contains("abc:edf", ":"))
 {
-    echo "contain\n";
+    echo "1. Contain\n";
 }
 
 if (!str_contains("abc:edf", ","))
 {
-    echo "Not contain\n";
+    echo "2. Not contain\n";
 }
->>>>>>> bff229ca091669e6b90081df6871eb8149eefa54:str.php
+
+$s = "asdfqwer";
+if (str_contains($s, 'fq'))
+{
+    echo "Contains: fq\n";
+}
+else
+{
+    echo "Not Contains: fq\n";
+}
+
+if (str_contains($s, strtolower('FQ')))
+{
+    echo "Contains: FQ\n";
+}
+else
+{
+    echo "Not Contains: FQ\n";
+}
+
+// * strpos
+$a = "A B C*D E F A";
+$pos = strpos($a, "*D");
+echo "pos type: ".gettype($pos).", pos = $pos"."\n";
+
+$pos = strpos($a, "Z");
+echo "pos type: ".gettype($pos).", pos = $pos"."\n";
+
+$pos = strpos($a, "A");
+echo "pos type: ".gettype($pos).", pos = $pos"."\n";
