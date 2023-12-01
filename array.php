@@ -4,6 +4,7 @@
     echo "********* Array *********\n";
     $arr = array(1,2,3);
     echo $arr[1]."\n";
+    echo $arr[-1]."\n";
 
     // Associative array
     echo "********* Associative Array *********\n";
