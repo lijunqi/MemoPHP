@@ -26,3 +26,7 @@ $e = 'powershell -a "a 1" -b "23"';
 $e_array = explode(" -", $e);
 print_r($e_array);
 echo "e_array len = ".count($e_array)."\n";
+
+$f = 'asdf';
+list($f1, $f2) = explode(":::", $f);
+echo "f1 = ".$f1.", f2 = ".$f2."\n";

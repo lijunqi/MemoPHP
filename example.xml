@@ -1,0 +1,168 @@
+<!--
+Copy this file to your user profile directory (%USERPROFILE%), remove the .sample extension
+and customize it per your individual machine settings
+-->
+<Configuration>
+  <!-- This variable is used by the CI Test/Test Center for environment setup -->
+  <!-- Do not modify unless CI Test/Test Center environment setup requires updates -->
+  <configurationVersion>1</configurationVersion>
+  <Terminal>
+    <!-- Terminal 1 -->
+    <terminal1IP>localhost</terminal1IP>
+    <terminal1type>PanelView 5510</terminal1type>
+    <terminal1EthIPname>AB_ETH-1</terminal1EthIPname>
+    <terminal1DisconnectTag>
+    </terminal1DisconnectTag>
+    <!-- Terminal 2 -->
+    <terminal2IP>0.0.0.0</terminal2IP>
+    <terminal2type>PanelView 5510</terminal2type>
+    <terminal2EthIPname>AB_ETH-1</terminal2EthIPname>
+    <!-- Terminal 3 -->
+    <terminal3IP>0.0.0.0</terminal3IP>
+    <terminal3type>PanelView 5510</terminal3type>
+    <terminal3EthIPname>AB_ETH-1</terminal3EthIPname>
+    <!-- eoiIP -->
+    <eoiIP>$terminal1IP$</eoiIP>
+    <eoiEthIPname>$terminal1EthIPname$</eoiEthIPname>
+    <!-- Disconnect Master Controller -->
+    <disconnectControllerIP>10.220.31.253</disconnectControllerIP>
+    <disconnectControllerSlot>1</disconnectControllerSlot>
+    <disconnectControllerCatalog>1756-L75</disconnectControllerCatalog>
+    <disconnectControllerFirmwareVer>V33</disconnectControllerFirmwareVer>
+    <disconnectControllerEthIPname>AB_ETH-1</disconnectControllerEthIPname>
+  </Terminal>
+  <Controller>
+    <!-- Controller 1 -->
+    <controller1IP>0.0.0.0</controller1IP>
+    <controller1Slot>0</controller1Slot>
+    <controller1Catalog>1756-L75</controller1Catalog>
+    <controller1FirmwareVer>V32</controller1FirmwareVer>
+    <controller1EthernetSlot>1</controller1EthernetSlot>
+    <controller1EthIPname>AB_ETH-1</controller1EthIPname>
+    <controller1ACD>$ASSETS_DIRECTORY$\ACD Files\DataTypes.ACD</controller1ACD>
+    <controller1opcTopic>DataTypes</controller1opcTopic>
+    <controller1Emulate>False</controller1Emulate>
+    <!-- Controller 2 -->
+    <controller2IP>0.0.0.0</controller2IP>
+    <controller2Slot>2</controller2Slot>
+    <controller2Catalog>1756-L75</controller2Catalog>
+    <controller2FirmwareVer>V32</controller2FirmwareVer>
+    <controller2EthernetSlot>1</controller2EthernetSlot>
+    <controller2EthIPname>AB_ETH-1</controller2EthIPname>
+    <controller2ACD>$ASSETS_DIRECTORY$\ACD Files\DataTypes.ACD</controller2ACD>
+    <controller2opcTopic>Reference2</controller2opcTopic>
+    <controller2Emulate>False</controller2Emulate>
+    <!-- Controller 3 -->
+    <controller3IP>0.0.0.0</controller3IP>
+    <controller3Slot>3</controller3Slot>
+    <controller3Catalog>1756-L75</controller3Catalog>
+    <controller3FirmwareVer>V32</controller3FirmwareVer>
+    <controller3EthernetSlot>1</controller3EthernetSlot>
+    <controller3EthIPname>AB_ETH-1</controller3EthIPname>
+    <controller3ACD>$ASSETS_DIRECTORY$\ACD Files\DataTypes.ACD</controller3ACD>
+    <controller3opcTopic>Reference3</controller3opcTopic>
+    <controller3Emulate>False</controller3Emulate>
+    <!-- Controller 4 -->
+    <controller4IP>0.0.0.0</controller4IP>
+    <controller4Slot>4</controller4Slot>
+    <controller4Catalog>1756-L75</controller4Catalog>
+    <controller4FirmwareVer>V32</controller4FirmwareVer>
+    <controller4EthernetSlot>1</controller4EthernetSlot>
+    <controller4EthIPname>AB_ETH-1</controller4EthIPname>
+    <controller4ACD>$ASSETS_DIRECTORY$\ACD Files\DataTypes.ACD</controller4ACD>
+    <controller4opcTopic>Reference4</controller4opcTopic>
+    <controller4Emulate>False</controller4Emulate>
+  </Controller>
+  <CameraIP>
+    <!-- Camera 1 -->
+    <camera1IP>10.220.31.251</camera1IP>
+    <camera1Model>Model</camera1Model>
+  </CameraIP>
+  <WebServer>
+    <!-- IP address of the web server -->
+    <webServer1IP>10.243.0.22</webServer1IP>
+    <!-- Root folder of Web server -->
+    <webServer1RootFolder>\\10.243.0.22\inetpub\wwwroot</webServer1RootFolder>
+    <!-- User account used e.g. to deploy files to the web server -->
+    <webServer1UserName>10.243.0.22\webuser</webServer1UserName>
+    <!-- User password used e.g. to deploy files to the web server -->
+    <webServer1UserPassword>Um9ja3dlbGwxUm9ja3dlbGwx</webServer1UserPassword>
+  </WebServer>
+  <ADTestServer>
+    <!-- IP address of the active directory -->
+    <adTestServer1IP>10.220.4.218</adTestServer1IP>
+    <!-- Fully qualified domain name of the active directory -->
+    <adTestServer1FQDN>CVB-Lab-ADTest.mke.ra.rockwell.com</adTestServer1FQDN>
+    <!-- Admin account name of the active directory -->
+    <adTestServer1AdminName>Q049QWRtaW5pc3RyYXRvcixDTj1Vc2VycyxEQz1ta2UsREM9cmEsREM9cm9ja3dlbGwsREM9Y29t</adTestServer1AdminName>
+    <!-- Admin account password of the active directory -->
+    <adTestServer1AdminPassword>UkFLQ0VjdmJ0ZW1wbGF0ZTE=</adTestServer1AdminPassword>
+  </ADTestServer>
+  <FTPTestServer>
+    <!-- IP address of the ftp server -->
+    <ftpTestServerIP>10.220.4.22</ftpTestServerIP>
+    <!-- port number of the ftp server -->
+    <ftpTestServerPort>7777</ftpTestServerPort>
+    <!-- username for the ftp server -->
+    <ftpTestServerUserName>ftpusertest</ftpTestServerUserName>
+    <!-- user password for the ftp server -->
+    <ftpTestServerPassword>FTPuser1234567890!</ftpTestServerPassword>
+    <!-- remote location for the ftp server -->
+    <ftpTestServerRemoteLocation>/</ftpTestServerRemoteLocation>
+  </FTPTestServer>
+  <Designer>
+    <xDTMaxRes>800</xDTMaxRes>
+    <yDTMaxRes>600</yDTMaxRes>
+    <xRTMaxRes>800</xRTMaxRes>
+    <yRTMaxRes>600</yRTMaxRes>
+    <canvasAnchorX>4</canvasAnchorX>
+    <canvasAnchorY>20</canvasAnchorY>
+    <canvasDPI>96</canvasDPI>
+    <monitorDPI>96</monitorDPI>
+    <PersistenceTarget>$MY_DOCUMENTS$\Studio 5000\Projects</PersistenceTarget>
+    <Process>ViewDesigner</Process>
+    <projectName>NewProject</projectName>
+    <screenName>NewScreen</screenName>
+    <!-- This variable is used for downloading files for enable export/import of VPDX files -->
+    <dtcPackageVersion>
+    </dtcPackageVersion>
+  </Designer>
+  <!-- Distributed Environment Only -->
+  <!-- If distributedEnv is set to true, verify the eoiIP variable is not set to localhost otherwise there can be conflicts with the Emulator -->
+  <Distributed>
+    <distributedEnv>false</distributedEnv>
+    <serverIP>0.0.0.0</serverIP>
+    <client1IP>0.0.0.0</client1IP>
+    <client2IP>0.0.0.0</client2IP>
+    <daTestRtVersion>
+    </daTestRtVersion>
+  </Distributed>
+  <!-- Execution Environment Variables -->
+  <AutomationSettings>
+    <!-- Set value to "Protected" or "Instrumented" -->
+    <buildClassification>protectedx64</buildClassification>
+    <!-- This variable is used only for CI environment -->
+    <CIenvironment>False</CIenvironment>
+    <!-- This variable is used for breakpad Version in TestCenter -->
+    <breakpadVersion>10.1.00000.00111</breakpadVersion>
+    <!-- This variable is used only for TestCenter environment -->
+    <TCenvironment>true</TCenvironment>
+    <!-- This variable is used only for Downloading artifacts from Artifactory -->
+    <ArtifactoryURL>https://cvbartifactory.mke.ra.rockwell.com/</ArtifactoryURL>
+    <!-- <ArtifactoryURL>https://cvbartifactorykce.ra-int.com/</ArtifactoryURL> -->
+    <!--This Variable is used for determining the Product Version -->
+    <productVersion>10.1.00000.03797</productVersion>
+    <!--This Variable is used for determining the LogixProduct Version -->
+    <logixVersion>V35</logixVersion>
+    <!--The two variables are used for checking slave controller time sync -->
+    <masterControllerIP>10.243.8.200</masterControllerIP>
+    <masterControllerSlot>
+    </masterControllerSlot>
+    <!--The variable is used to select user type logged to runtime -->
+    <!-- Set value to "Domain", "Local" or "Guest" -->
+    <userType>Guest</userType>
+    <daTestRtVersion>10.1.00000.00141</daTestRtVersion>
+    <pythonVersion>10.1.00000.00019</pythonVersion>
+    <TCSiteLocation>KTW</TCSiteLocation>
+  </AutomationSettings>
+</Configuration>

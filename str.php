@@ -74,3 +74,17 @@ echo "pos type: ".gettype($pos).", pos = $pos"."\n";
 
 $pos = strpos($a, "A");
 echo "pos type: ".gettype($pos).", pos = $pos"."\n";
+
+// * startswith
+$string = 'The lazy fox jumped over the fence';
+
+if (str_starts_with($string, 'The')) {
+    echo "The string starts with 'The'\n";
+}
+
+if (str_starts_with($string, 'the')) {
+    echo 'The string starts with "the"';
+} else {
+    echo '"the" was not found because the case does not match';
+}
+

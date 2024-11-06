@@ -37,17 +37,25 @@ echo "foo5: ".$foo5."\n";
 $a = null;
 if (isset($a))
 {
-    echo 'is set';
+    echo "a is set\n";
 }
 else {
-    echo 'not set';
+    echo "a not set\n";
 }
 
 $content = "asdf";
 $content .= "|".$a;
 echo $content."\n";
 
+echo "Split A_B_C_D, max=3\n";
 list($first, $second, $third) = explode("_", "A_B_C_D", 3);
+echo "1st is - ".$first."\n";
+echo "2nd is - ".$second."\n";
+echo "3rd is - ".$third."\n";
+echo "\n";
+
+echo "Split A_B_C_D, no max\n";
+list($first, $second, $third) = explode("_", "A_B_C_D");
 echo "1st is - ".$first."\n";
 echo "2nd is - ".$second."\n";
 echo "3rd is - ".$third."\n";
